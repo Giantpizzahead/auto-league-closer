@@ -1,0 +1,7 @@
+pytest ~= 7.2.0
+pytest-timeout ~= 2.1.0   # PyTest extension (time limits)
+black ~= 22.12.0          # PEP 8 formatter
+pycodestyle ~= 2.10.0     # PEP 8 checker
+pytype ~= 2022.12.15      # Static typing checker
+pyinstaller ~= 5.7.0      # To create EXE
+pillow ~= 9.3.0           # To generate application icon

@@ -4,16 +4,21 @@ build-backend = "hatchling.build"
 
 [project]
 name = "leaguecloser"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Giantpizzahead" },
 ]
 description = "Mock package that auto-closes the League client"
 readme = "README.md"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: Microsoft :: Windows",
+]
+dependencies = [
+  "psutil",
+  "pyautogui",
+  "pywin32",
 ]
 
 [project.urls]
@@ -21,5 +26,5 @@ classifiers = [
 
 [tool.pytest.ini_options]
 addopts = [
-    "--import-mode=importlib",
+  "--import-mode=importlib",
 ]

@@ -10,7 +10,7 @@ This handy program will **automatically close the League of Legends client whene
 
 ## Installation
 
-Download the installer [here](https://github.com/Giantpizzahead/auto-league-closer/releases/download/v1.0.0/AutoLeagueCloserSetup.exe).
+Run the installer [here](https://github.com/Giantpizzahead/auto-league-closer/releases/download/v1.0.0/AutoLeagueCloserSetup.exe).
 
 ## How It Works
 

@@ -1,23 +1,23 @@
-init:
-	pip install -r requirements.txt
-
 run:
-	python -m leaguecloser
+	python src/app.py
 
 test:
+	pip install -e .
 	pytest tests
 
-testfull:
-	pytest tests/_test_full.py
+package_create:
+	pip install build
+	python -m build
 
-lint:
-	pycodestyle --max-line-length=119 --ignore=E402 leaguecloser/* tests/*
-	pytype leaguecloser/* tests/*
+package_upload:
+	pip install twine
+	python -m twine upload dist/*
 
-reformat:
-	black leaguecloser tests
+build_app:
+	pip install pyinstaller
+	pyinstaller --name "Auto League Closer" --icon icon.ico --specpath misc \
+				--add-data "../src/leaguecloser/lib;leaguecloser/lib" \
+				--add-data "../src/leaguecloser/data;leaguecloser/data" \
+				--clean --noconfirm src/app.py
 
-build:
-	pyinstaller --clean leaguecloser.spec
-
-.PHONY: init run test testfull lint reformat build
+.PHONY: run test package_create package_upload build_app

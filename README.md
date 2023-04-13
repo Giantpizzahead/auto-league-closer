@@ -1,37 +1,58 @@
-# Auto League Finder
+# Auto League Closer
 
 Tired of procrastinating on homework all day while still being hardstuck Bronze? Suffering from a bad case of League withdrawal?
 
-Well, I've got a solution for you! Install the **Auto League Finder™**!
+Well, I've got a solution for you! Install the **Auto League Closer**!
 
-This handy program blasts you with alerts whenever it sees the League of Legends client, so you can get back to binging YouTube videos - uh, I mean doing homework :)
+This handy program will **automatically close the League of Legends client whenever it's running**, so you can get back to binging YouTube videos - uh, I mean doing homework :)
 
-(This is a mock application, made solely to practice following style guidelines, making a clean project structure, and distributing packages / end user applications.)
+*This is a mock application to demonstrate a clean project structure, along with steps to distribute Python modules and end user application installers.*
 
-### Setup
+## How the App Works
+
+1. Repeatedly checks if League is open using [psutil](https://pypi.org/project/psutil/).
+2. Closes League in a ~fancy~ way using [SikuliX](http://sikulix.com/).
+
+## Installing the App
+
+See the latest release. (WIP)
+
+## Using the Python Module
+
+View the [PyPi page](https://pypi.org/project/leaguecloser/1.0.0/).
+
+Example usage (also what the installable app does):
+
+```python
+import leaguecloser
+import time
+
+print("Searching for League...")
+while True:
+    if leaguecloser.is_league_running():
+        print("\nNO LEAGUE ALLOWED!")
+        if leaguecloser.close_league():
+            print("\nThat's right... now get back to work!")
+    time.sleep(3)
+```
+
+## Packaging and Building Methods
+
+The Makefile contains good practice methods for the common tasks below:
+
+```bash
+$ make run  # Runs the file
+$ make test  # Runs all tests
+$ make package_create  # Creates (or updates) the leaguecloser package
+$ make package_upload  # Uploads the leaguecloser package to PyPi
+$ make build_app  # Builds the app into a standalone folder with an executable
+```
+
+## Development Setup
 
 First, setup a [virtual environment](https://kylefu.me/cheat_python/envanddeps.html). Then run:
 
 ```bash
 $ pip install -r requirements.txt
-```
-
-If you want to help develop the project, also run:
-
-```bash
 $ pip install -r dev_requirements.txt
-```
-
-### Packaging into an EXE
-
-First, create a Python file that calls your module's main function or does something else - the "entry point" of your application. Then, to bundle it up, do the following:
-
-```bash
-# Initial pyinstaller to generate .spec file
-pyinstaller entry.py --name leaguecloser --clean --onefile --icon leagueicon.png
-# Go into the .spec file, and add Tree('<relative path to data folder from cwd>', prefix='<relative path to data folder from cwd (for consistency)>') after a.binaries in the EXE section
-# Then, run the below to regenerate the EXE
-pyinstaller --clean leaguecloser.spec
-# Or (these are equivalent, see the Makefile):
-make build
 ```

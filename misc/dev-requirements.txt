@@ -1,0 +1,3 @@
+prettytable
+pytest
+Pillow

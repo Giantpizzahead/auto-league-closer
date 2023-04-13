@@ -57,5 +57,5 @@ $ make build_app  # Builds the app into a standalone folder with an executable
 First, setup a [virtual environment](https://kylefu.me/cheat_python/envanddeps.html). Then run:
 
 ```powershell
-> & '.\Dev Setup.ps1'
+> & '.\misc\Dev Setup.ps1'
 ```

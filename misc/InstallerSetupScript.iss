@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Auto League Closer"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.4"
 #define MyAppPublisher "Giantpizzahead"
 #define MyAppURL "https://github.com/Giantpizzahead/auto-league-closer"
 #define MyAppExeName "Auto League Closer.exe"
@@ -23,8 +23,8 @@ DisableProgramGroupPage=yes
 LicenseFile=C:\Users\sunny\OneDrive\Documents\GitHub\auto-league-closer\LICENSE
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputBaseFilename=Auto League Closer Setup
-OutputDir=C:\Users\sunny\OneDrive\Documents\GitHub\auto-league-closer
+OutputBaseFilename=LeagueCloserSetup
+OutputDir=C:\Users\sunny\OneDrive\Documents\GitHub\auto-league-closer\dist
 SetupIconFile=C:\Users\sunny\OneDrive\Documents\GitHub\auto-league-closer\misc\icon.ico
 Compression=lzma
 SolidCompression=yes

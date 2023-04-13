@@ -25,7 +25,6 @@ def close_league():
         computer.focus_window("League of Legends")
     except Exception as e:
         print("Unable to focus the League window... just wait until it opens :)")
-        print(e)
         return False
     # Run the SikuliX script
     script_path = os.path.join(os.path.dirname(__file__), "data", "close_league.sikuli")

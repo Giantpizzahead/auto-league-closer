@@ -8,7 +8,7 @@ a = Analysis(
     ['..\\src\\app.py'],
     pathex=[],
     binaries=[],
-    datas=[('../src/leaguecloser/lib', 'leaguecloser/lib'), ('../src/leaguecloser/data', 'leaguecloser/data')],
+    datas=[('../src/leaguecloser/data', 'leaguecloser/data')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

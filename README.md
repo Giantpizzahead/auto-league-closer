@@ -23,8 +23,6 @@ Run the installer [here](https://github.com/Giantpizzahead/auto-league-closer/re
 $ pip install leaguecloser
 ```
 
-View the [PyPi page](https://pypi.org/project/leaguecloser/1.0.0/).
-
 Example usage (also what the installable app does):
 
 ```python

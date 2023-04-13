@@ -1,5 +1,7 @@
 # Source: https://github.com/github/gitignore/blob/main/Python.gitignore
 
+.vscode/
+
 # Mac
 .DS_Store
 

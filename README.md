@@ -14,7 +14,7 @@ This is a **mock application** - complex enough to run into many common issues, 
 
 ## Installation
 
-Run the [installer](https://github.com/Giantpizzahead/auto-league-closer/releases/download/v1.0.4/LeagueCloserSetup.exe). (This app only works on Windows.)
+Run the [installer](https://github.com/Giantpizzahead/auto-league-closer/releases/download/v1.0.5/LeagueCloserSetup.exe). (This app only works on Windows.)
 
 ## How It Works
 

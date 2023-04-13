@@ -8,14 +8,14 @@ This handy program will **automatically close the League of Legends client whene
 
 *This is a mock application to demonstrate a clean project structure, along with steps to distribute Python modules and end user application installers.*
 
-## How the App Works
+## Installation
+
+Download the installer [here](https://github.com/Giantpizzahead/auto-league-closer/releases/download/v1.0.0/AutoLeagueCloserSetup.exe).
+
+## How It Works
 
 1. Repeatedly checks if League is open using [psutil](https://pypi.org/project/psutil/).
-2. Closes League in a ~fancy~ way using [SikuliX](http://sikulix.com/).
-
-## Installing the App
-
-See the latest release. (WIP)
+2. Closes League in a \~fancy\~ way using [SikuliX](http://sikulix.com/).
 
 ## Using the Python Module
 

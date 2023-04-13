@@ -56,7 +56,6 @@ $ make build_app  # Builds the app into a standalone folder with an executable
 
 First, setup a [virtual environment](https://kylefu.me/cheat_python/envanddeps.html). Then run:
 
-```bash
-$ pip install -r requirements.txt
-$ pip install -r dev_requirements.txt
+```powershell
+> & '.\Dev Setup.ps1'
 ```

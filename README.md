@@ -85,3 +85,17 @@ Run the development environment [setup script](https://github.com/Giantpizzahead
 ```powershell
 > & '.\misc\Dev Setup.ps1'
 ```
+
+### Publishing a New Version
+
+Here are the steps:
+
+- Change the project version in `pyproject.toml`.
+
+- Delete the `dist/package` directory.
+
+- Run `make build_app package_create package_upload`. Enter your PyPi credentials when prompted.
+
+- Compile the Inno Setup script `misc/InstallerSetupScript.iss`. (You'll need to have [Inno Setup](https://jrsoftware.org/isdl.php#stable) installed locally.)
+
+- Commit/push to Github, and add a new release with the right version tag and the generated installer `dist/LeagueCloserSetup.exe` attached as a binary.
